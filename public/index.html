@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="main.js">
+    <title>EcoCalc - Calcule sua Pegada de Carbono</title>
+</head>
+<body>
+
+    <header>
+        <h1>EcoCalc</h1>
+        <nav>
+            <a href="#home">Início</a>
+            <a href="#auth-section">Acessar / Cadastrar</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section id="home" class="banner">
+            <h2>Descubra o seu impacto no planeta</h2>
+            <p>Insira dados de transporte e consumo energético para calcular sua emissão de CO₂ e ver sua meta de compensação em árvores.</p>
+            <a href="#auth-section" class="btn">Calcular minha pegada de carbono</a>
+        </section>
+
+        <section id="auth-section" class="auth-forms">
+            
+            <div class="form-card">
+                <h3>Login de Usuário</h3>
+                <form id="loginForm">
+                    <div class="form-group">
+                        <label for="login-email">E-mail</label>
+                        <input type="email" id="login-email" required placeholder="seu@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="login-senha">Senha</label>
+                        <input type="password" id="login-senha" required placeholder="Digite sua senha">
+                    </div>
+                    <button type="submit" class="btn" style="width: 100%;">Entrar</button>
+                </form>
+            </div>
+
+            <div class="form-card">
+                <h3>Criar Nova Conta</h3>
+                <form id="cadastroForm">
+                    <div class="form-group">
+                        <label for="cad-nome">Nome Completo</label>
+                        <input type="text" id="cad-nome" required placeholder="Seu nome">
+                    </div>
+                    <div class="form-group">
+                        <label for="cad-email">E-mail</label>
+                        <input type="email" id="cad-email" required placeholder="seu@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="cad-senha">Senha</label>
+                        <input type="password" id="cad-senha" required placeholder="Crie uma senha segura">
+                    </div>
+                    <button type="submit" class="btn" style="width: 100%;">Cadastrar</button>
+                </form>
+            </div>
+
+        </section>
+    </div>
+</body>
+</html>
