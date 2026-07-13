@@ -22,7 +22,7 @@
     <main id="home" class="hero section-container active">
         <h1 class="hand-drawn-text">Qual é o impacto das suas escolhas no planeta?</h1>
         <p>Descubra sua pegada de carbono e ajude a salvar o <strong>Mundo</strong>. Responda a algumas perguntas simples sobre transporte e energia e saiba quantas árvores você precisa plantar para compensar sua emissão.</p>
-        <a onclick="showSection('cadastro')" class="btn-start">Começar Agora</a>
+        <a onclick="showSection('formulario-quiz')" class="btn-start">Calcular Pegada</a>
     </main>
 
     <section id="login" class="form-section section-container">
@@ -62,6 +62,26 @@
             </form>
         </div>
     </section>
+
+    <div id="formulario-quiz" class="section-container">
+    <div class="quiz-modal">
+        <div class="progress-container">
+            <div class="progress-bar" id="progress-bar" style="width: 0%;"></div>
+        </div>
+        <p id="progress-text">1 de X</p>
+
+        <div class="step active" id="quiz-container">
+            <h2 id="pergunta-texto" class="hand-drawn-text">Carregando pergunta...</h2>
+            <div id="input-container" style="margin-top: 20px;">
+                </div>
+        </div>
+
+        <div class="quiz-navigation">
+            <button id="btn-prev" class="btn-secundario" onclick="mudarEtapa(-1)">Anterior</button>
+            <button id="btn-next" class="btn-start" onclick="mudarEtapa(1)">Próximo</button>
+        </div>
+    </div>
+</div>
     <script src="main.js"></script>
 </body>
 </html>

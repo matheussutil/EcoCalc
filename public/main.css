@@ -206,3 +206,43 @@
             .hero h1 { font-size: 2.5rem; }
             .nav-links { display: none; }
         }
+        .quiz-modal {
+        background-color: white;
+        padding: 40px;
+        border-radius: 20px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        max-width: 600px;
+        margin: 50px auto;
+        text-align: center;
+    }
+
+    /* Barra de Progresso */
+    .progress-container {
+        background-color: #e0e0e0;
+        border-radius: 10px;
+        height: 10px;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .progress-bar {
+        background-color: var(--verde-principal, #27ae60);
+        height: 100%;
+        border-radius: 10px;
+        transition: width 0.3s ease;
+    }
+
+    /* Ocultar etapas inativas */
+    .step {
+        display: none;
+    }
+    .step.active {
+        display: block;
+        animation: fadeIn 0.4s;
+    }
+
+    /* Navegação */
+    .quiz-navigation {
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+    }
