@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
-    <title>EcoCalc - Descubra sua Pegada de Carbono</title>
+    <title>EcoCalc</title>
     
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
@@ -21,7 +21,7 @@
 
     <main id="home" class="hero section-container active">
         <h1 class="hand-drawn-text">Qual é o impacto das suas escolhas no planeta?</h1>
-        <p>Descubra sua pegada de carbono e ajude a salvar o <strong>Mundo</strong>. Responda a algumas perguntas simples sobre transporte e energia e saiba quantas árvores você precisa plantar para compensar sua emissão.</p>
+        <p>Descubra sua pegada de carbono e ajude a salvar o <strong>Mundo</strong>. Responda a algumas perguntas simples sobre transporte e energia e descubra qual os impactos das suas ações e como compensar suas emissões.</p>
         <a onclick="showSection('formulario-quiz')" class="btn-start">Calcular Pegada</a>
     </main>
 
@@ -82,6 +82,21 @@
         </div>
     </div>
 </div>
+<section id="resultados" class="section-container" style="text-align: center; padding: 40px;">
+        <h2 class="hand-drawn-text">Sua Pegada de Carbono Anual</h2>
+        
+        <div class="resultado-destaque" style="background: #e8f5e9; padding: 20px; border-radius: 10px; margin: 20px 0;">
+            <h1 id="resultado-co2" style="color: #2e7d32; font-size: 3rem;">0 kg CO₂/ano</h1>
+            <p>Esta é a estimativa do seu impacto no planeta.</p>
+        </div>
+
+        <div class="compensacao-destaque" style="background: #e0f7fa; padding: 20px; border-radius: 10px;">
+            <h3>Para compensar suas emissões, você precisaria plantar:</h3>
+            <h1 id="resultado-arvores" style="color: #00695c; font-size: 2.5rem;">0 árvores</h1>
+        </div>
+
+        <button onclick="reiniciarQuiz()" class="btn-start" style="margin-top: 30px; cursor: pointer;">Refazer Cálculo</button>
+    </section>
     <script src="main.js"></script>
 </body>
 </html>
